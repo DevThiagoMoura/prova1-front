@@ -1,0 +1,184 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo escuro igual ao do professor */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1f2b; /* azul bem escuro, quase preto */
+    color: #f8f8f2;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container centralizado e estilizado */
+.container {
+    max-width: 500px;
+    width: 90%;
+    background-color: #3b4054; /* “cartão” cinza-azulado */
+    padding: 30px 24px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* Título estilizado */
+h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #c792ea; /* roxo claro */
+    font-weight: bold;
+}
+
+/* Formulário */
+#item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input de texto */
+#item-form input[type="text"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #6272a4; 
+    background-color: #3b4054;
+    color: #f8f8f2;
+    border-radius: 6px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito no foco do input */
+#item-form input[type="text"]:focus {
+    border-color: #50fa7b;
+    box-shadow: 0 0 0 2px rgba(80, 250, 123, 0.25);
+    outline: none;
+}
+
+/* Botões do formulário */
+#item-form button {
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+/* Botão principal - Adicionar/Atualizar */
+#btn-save {
+    background-color: #2dfd5a; /* verde neon da prova */
+    color: #1c1f2b;
+    font-weight: bold;
+}
+
+/* Hover no botão de salvar */
+#btn-save:hover {
+    background-color: #27e351;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(39, 227, 81, 0.4);
+}
+
+/* Botão de cancelar (vermelho, largura total) */
+#btn-cancel {
+    background-color: #ff5555;
+    color: #f8f8f2;
+    font-weight: bold;
+}
+
+/* Hover no botão de cancelar */
+#btn-cancel:hover {
+    background-color: #ff4444;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(255, 68, 68, 0.4);
+}
+
+/* Botão de cancelar oculto */
+#btn-cancel.hidden {
+    display: none;
+}
+
+/* Lista de itens */
+#item-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/* Estilo dos itens na lista */
+#item-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    background-color: #6272a4; /* azul da screenshot */
+    border-radius: 6px;
+    transition: background-color 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+
+/* Efeito hover nos itens da lista */
+#item-list li:hover {
+    background-color: #6b7b9b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+    transform: translateY(-1px);
+}
+
+/* Nome do item */
+.item-name {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 16px;
+    color: #f8f8f2;
+}
+
+/* Container dos botões de ação */
+.item-actions {
+    display: flex;
+    gap: 6px;
+}
+
+/* Estilo dos botões de ação nos itens */
+.item-actions button {
+    padding: 8px 14px;
+    font-size: 14px; /*  */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+/* Botão de editar (laranja) */
+.btn-edit {
+    background-color: #ffb86c;
+    color: #282a36;
+    font-weight: 500;
+}
+
+/* Hover no botão de editar */
+.btn-edit:hover {
+    background-color: #ffa653;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(255, 166, 83, 0.4);
+}
+
+/* Botão de excluir (vermelho) */
+.btn-delete {
+    background-color: #ff5555;
+    color: #f8f8f2;
+    font-weight: 500;
+}
+
+/* Hover no botão de excluir */
+.btn-delete:hover {
+    background-color: #ff4444;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(255, 68, 68, 0.4);
+}
