@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD de Itens</title>
+    <!-- Aqui estava errado: era src="style.css" -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciador de Itens</h1>
+        
+        <!-- Aqui estava id="item--form" (com dois hífens) -->
+        <form id="item-form">
+            <!-- Aqui estava id="item-Id" (I maiúsculo), o JS procura "item-id" -->
+            <input type="hidden" id="item-id">
+            <input type="text" id="item-name" placeholder="Nome do item" required>
+            <!-- Aqui estava "submmit" -->
+            <button type="submit" id="btn-save">Adicionar Item</button>
+            <!-- Aqui estava "buton" -->
+            <button type="button" id="btn-cancel" class="hidden">Cancelar</button>
+        </form>
+
+        <ul id="item-list"></ul>
+    </div>
+
+    <!-- jQuery estava com URL toda errada e você não usa jQuery no script -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+
+    <!-- Aqui estava "Script.js" mas o arquivo é script.js (minúsculo) -->
+    <script src="script.js"></script>
+</body>
+</html>
